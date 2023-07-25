@@ -21,16 +21,11 @@ func main() {
 	}
 	fmt.Println("Sum: ", sum)
 	//while loop
-	// count := 10
-	// for count < 0 {
-	// 	fmt.Println("Counter---- ", count)
-	// 	count--
-	// }
-	// fmt.Println("Stopped the counter")
 	count := 10
 	for count > 0 {
-		fmt.Println(count)
+		fmt.Println("Counter---- ", count)
 		count--
 	}
-	fmt.Println("Liftoff!")
+	fmt.Println("Stopped the counter")
+
 }

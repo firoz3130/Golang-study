@@ -22,10 +22,23 @@ func main() {
 	fmt.Println("Sum: ", sum)
 	//while loop
 	count := 10
-	for count > 0 {
+	for count > -1 {
 		fmt.Println("Counter---- ", count)
+		//one second delay for counter
+		for i := 0; i < 1000000000; i++ {
+		}
 		count--
 	}
-	fmt.Println("Stopped the counter")
+	fmt.Println("Shoot")
+	for {
+		var cmd string
+		fmt.Print("Enter command: ")
+		fmt.Scanln(&cmd)
 
+		if cmd == "e" {
+			break
+		}
+		fmt.Println("Executin the command: ", cmd)
+	}
+	fmt.Print("Came out of infinite loop")
 }
